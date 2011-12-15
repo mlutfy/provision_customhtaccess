@@ -1,0 +1,7 @@
+Allows to include custom htaccess directives in your site vhost.
+Create a file called sites/example.org/htaccess-custom and run provision-verify on the site.
+
+IMPORTANT: You must fully trust users who can modify this file. This is
+equivalent to allowing them to modify your global Apache configuration.
+A user could declare new vhosts, add/override options, etc.
+

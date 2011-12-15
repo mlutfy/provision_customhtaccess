@@ -1,0 +1,6 @@
+name = Provision Custom Htaccess
+description = Allow sites to include a custom htaccess
+package = Provision
+dependencies[] = drush
+
+core = 6.x
