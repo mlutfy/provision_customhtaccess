@@ -1,7 +1,34 @@
 Allows to include custom htaccess directives in your site vhost.
-Create a file called sites/example.org/htaccess-custom and run provision-verify on the site.
+Supports Apache and Nginx.
 
-IMPORTANT: You must fully trust users who can modify this file. This is
-equivalent to allowing them to modify your global Apache configuration.
+WARNING: You must fully trust users who can modify this file. This is
+equivalent to allowing them to modify your global Apache/Nginx configuration.
 A user could declare new vhosts, add/override options, etc.
 
+To get the latest version of this module:  
+https://github.com/mlutfy/provision_customhtaccess
+
+Apache
+======
+
+Create a file called sites/example.org/htaccess-custom and run a 'verify' task
+on the site.
+
+Nginx
+=====
+
+Create a file called sites/example.org/nginx-custom.conf and run 'verify' task
+on the site.
+
+Support
+=======
+
+Please use the github issue queue for support:  
+https://github.com/mlutfy/provision_customhtaccess/issues
+
+Copyright
+=========
+
+Copyright (C) 2013-2014 Mathieu Lutfy (mathieu@bidon.ca)
+
+License: GPL v3 or later. http://www.gnu.org/copyleft/gpl.html
